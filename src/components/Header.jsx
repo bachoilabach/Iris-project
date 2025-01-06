@@ -25,7 +25,7 @@ const navigationMenus = [
 ];
 export default function Header() {
 	return (
-		<div className="px-28 py-3 flex justify-between items-center border-b border-[#e4e5ea] backdrop-blur-[15px] bg-white/90 fixed top-0 z-50 w-full">
+		<div className="px-28 container py-3 flex justify-between items-center border-b border-[#e4e5ea] backdrop-blur-[15px] bg-white/90 fixed top-0 z-50 ">
 			{/* Logo */}
 			<div className="w-28">
 				<img src={logo} width={59} height={56} />

@@ -4,7 +4,18 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['"Plus Jakarta Sans"', 'sans-serif'], 
+				sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+				mono: ['Azeret Mono', 'monospace'],
+			},
+			container: {
+				center: true, 
+				screens: {
+					sm: '500px',
+					md: '768px',
+					lg: '1024px',
+					xl: '1280px',
+					'2xl': '1440px',
+				},
 			},
 		},
 	},
