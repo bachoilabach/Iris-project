@@ -35,6 +35,7 @@ export default function GameDistribution() {
 						className="relative bg-transparent aspect-auto z-40"
 						width={538}
 						height={620}
+						loading='lazy'
 					/>
 					{/* Hình vuông nằm dưới */}
 					<img
@@ -43,6 +44,7 @@ export default function GameDistribution() {
 						width={337}
 						height={351}
 						className="absolute bottom-[30px] right-[-110px] z-0 rotate-[60deg] blur-[50px]"
+						loading='lazy'
 					/>
 				</div>
 			</div>
@@ -50,7 +52,7 @@ export default function GameDistribution() {
 				<div className="text-center text-[#63657b] text-[10px] font-bold font-sans uppercase leading-[18px] tracking-[3.20px]">
 					scroll to discovery
 				</div>
-				<img src={scrollIcon} width={21} height={36} />
+				<img src={scrollIcon} width={21} height={36} loading='lazy'/>
 			</div>
 		</>
 	);

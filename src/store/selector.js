@@ -1,0 +1,1 @@
+export const iconSelector = (state) => state.icons 

@@ -4,7 +4,7 @@ export default function FeatureCard({ image, size, title, description }) {
 	return (
 		<div
 			className={`${size} shrink relative hover:drop-shadow-2xl cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 group`}>
-			<img src={image} className="rounded-2xl object-contain w-full" />
+			<img src={image} className="rounded-2xl object-contain w-full" loading='lazy'/>
 
 			<div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-black/50 via-transparent to-transparent"></div>
 

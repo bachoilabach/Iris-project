@@ -1,5 +1,7 @@
 import GameDistribution from './GameDistribution';
 import OurFeature from './OurFeature';
+import OurRoadMap from './OurRoadMap';
+import OutPartner from './OutPartner';
 import WhoWeAre from './WhoWeAre';
 export default function HomePage() {
 	return (
@@ -10,6 +12,9 @@ export default function HomePage() {
 
 			<OurFeature />
 
+			<OurRoadMap />
+
+			<OutPartner />
 		</div>
 	);
 }

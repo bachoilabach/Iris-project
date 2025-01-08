@@ -37,7 +37,7 @@ export default function OurFeature() {
 						a trusted
 					</div>
 
-					<img className="rounded-3xl" src={NFTImage} width={119} />
+					<img className="rounded-3xl" src={NFTImage} width={119} loading='lazy'/>
 
 					<div className="text-center text-[#1f212e] text-6xl font-extrabold font-sans capitalize leading-[90px]">
 						NFT Game Ecosystem
@@ -48,11 +48,11 @@ export default function OurFeature() {
 				<img
 					src={MVPProduct}
 					alt="MVP Product"
-					className="w-full object-cover"
+					className="w-[1440px] object-cover"
 				/>
-				<div className="px-28 min-h-[912px] mt-[-40px]">
+				<div className="px-28 mt-[-40px] aspect-video">
 					<div className="border-[12px] backdrop-blur-[5px] border-[#5c5e64] rounded-[32px] relative">
-						<img src={BrainWave} className="object-cover rounded-2xl" />
+						<img src={BrainWave} className="object-cover rounded-2xl" loading='lazy'/>
 						<img
 							src={playIcon}
 							className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
