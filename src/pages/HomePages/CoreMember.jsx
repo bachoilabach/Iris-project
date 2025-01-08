@@ -19,8 +19,9 @@ const CoreMember = () => {
 				</div>
 				{listMember.map((member, index) => (
 					<MemberCard
+						index={index}
 						key={index}
-                        name={member.name}
+						name={member.name}
 						img={member.img}
 						position={member.position}
 						alt={member.alt}
