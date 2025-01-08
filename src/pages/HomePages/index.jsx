@@ -1,3 +1,5 @@
+import BackerAnhAdvisors from './BackerAnhAdvisors';
+import CoreMember from './CoreMember';
 import GameDistribution from './GameDistribution';
 import OurFeature from './OurFeature';
 import OurRoadMap from './OurRoadMap';
@@ -15,6 +17,10 @@ export default function HomePage() {
 			<OurRoadMap />
 
 			<OutPartner />
+
+			<BackerAnhAdvisors />
+
+			<CoreMember />
 		</div>
 	);
 }

@@ -8,7 +8,7 @@ export default {
 				mono: ['Azeret Mono', 'monospace'],
 			},
 			container: {
-				center: true, 
+				center: true,
 				screens: {
 					sm: '500px',
 					md: '768px',
@@ -16,6 +16,9 @@ export default {
 					xl: '1280px',
 					'2xl': '1440px',
 				},
+			},
+			grayscale: {
+				70: '70%',
 			},
 		},
 	},
