@@ -13,6 +13,7 @@ const MemberCard = ({ img, name, position, alt, index }) => {
 					} w-full  object-cover filter grayscale brightness-90`}
 					src={img}
 					alt={alt}
+                    loading='lazy'
 				/>
 				<div className="absolute inset-0 bg-[#D9D9D9] mix-blend-color" />
 			</div>
@@ -25,7 +26,7 @@ const MemberCard = ({ img, name, position, alt, index }) => {
 					<div className="p-1.5 bg-[#20212f] rounded flex-col justify-center items-center gap-2.5 inline-flex">
 						<div className="w-4 h-4 relative  overflow-hidden">
 							<div className="w-[12.80px] h-[12.80px] left-[1.60px] top-[1.60px] absolute">
-								<img src={LindkedIn} />
+								<img src={LindkedIn} className='transition-colors filter invert'/>
 							</div>
 						</div>
 					</div>

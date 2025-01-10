@@ -75,10 +75,8 @@ export default function QuanTumModal() {
 						</div>
 					</div>
 					{contentOfModal.contentModal.map((ele, index) => (
-						<>
-							<div
-								className="self-stretch justify-start items-start gap-5 inline-flex "
-								key={index}>
+						<div key={index}>
+							<div className="self-stretch justify-start items-start gap-5 inline-flex ">
 								<div className="w-[140px] text-[#1f212e] text-sm font-extrabold font-sans leading-snug">
 									{ele.rowTitle.title}
 									<br />
@@ -91,7 +89,7 @@ export default function QuanTumModal() {
 							{index < contentOfModal.contentModal.length - 1 && (
 								<div className="w-full border border-[#e1e2ec]" />
 							)}
-						</>
+						</div>
 					))}
 				</div>
 			</div>
