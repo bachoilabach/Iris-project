@@ -8,7 +8,7 @@ import TitleAndDescription from '../../components/TitleAndDescription';
 export default function OurFeature() {
 	return (
 		<>
-			<div className="mt-[100px] px-28 flex flex-col items-center mb-[120px]">
+			<div className="mt-[100px] xl:px-28 md:px-20 px-4 flex flex-col items-center sm:mb-[120px] mb-10">
 				<TitleAndDescription
 					title={'Our'}
 					titleGradient={'Features'}
@@ -17,7 +17,7 @@ export default function OurFeature() {
 					and bring our products to the world.`}
 				/>
 
-				<div className="flex flex-wrap mt-4 mb-10 gap-8">
+				<div className="flex flex-wrap md:mt-4 mt-10 mb-10 md:gap-8 gap-6 w-full">
 					{listCard.map((card, index) => (
 						<FeatureCard
 							image={card.image}
@@ -28,31 +28,39 @@ export default function OurFeature() {
 						/>
 					))}
 				</div>
-				<div className="text-center text-[#1f212e] text-[32px] font-light font-['Plus Jakarta Sans'] leading-[48px]">
+				<div className="text-center text-[#1f212e] xl:text-[32px] sm:text-[28px] text-[26px] font-light font-sans leading-9 sm:leading-[48px]">
 					Our Mission is to support the development of distinctive, lasting and
 					substantial NFT Games and to build
 				</div>
-				<div className="justify-start items-center gap-3 inline-flex">
-					<div className="text-center text-[#1f212e] text-6xl font-extrabold font-['Plus Jakarta Sans'] capitalize leading-[90px]">
+				<div className="justify-start items-center gap-3 sm:inline-flex flex-col">
+					<div className="text-center text-[#1f212e] xl:text-6xl text-4xl font-extrabold font-sans capitalize sm:leading-[90px] leading-[54px] mt-2 sm:mt-0">
 						a trusted
 					</div>
 
-					<img className="rounded-3xl" src={NFTImage} width={119} loading='lazy'/>
+					<img
+						className="rounded-3xl xl:w-[119px] w-[80px] sm:block hidden"
+						src={NFTImage}
+						loading="lazy"
+					/>
 
-					<div className="text-center text-[#1f212e] text-6xl font-extrabold font-sans capitalize leading-[90px]">
+					<div className="text-center text-[#1f212e] xl:text-6xl text-4xl font-extrabold font-sans capitalize sm:leading-[90px] leading-[54px]">
 						NFT Game Ecosystem
 					</div>
 				</div>
 			</div>
-			<div className="relative overflow-x-hidden ">
+			<div className="relative overflow-x-hidden">
 				<img
 					src={MVPProduct}
 					alt="MVP Product"
-					className="w-[1440px] object-cover"
+					className="w-full object-cover"
 				/>
-				<div className="px-28 mt-[-40px] aspect-video">
-					<div className="border-[12px] backdrop-blur-[5px] border-[#5c5e64] rounded-[32px] relative">
-						<img src={BrainWave} className="object-cover rounded-2xl" loading='lazy'/>
+				<div className="xl:px-28 sm:px-20 px-4 sm:mt-[-40px] -mt-3">
+					<div className="sm:border-[12px] border-8 backdrop-blur-[5px] border-[#5c5e64] sm:rounded-[32px] rounded-3xl relative">
+						<img
+							src={BrainWave}
+							className="object-cover rounded-xl"
+							loading="lazy"
+						/>
 						<img
 							src={playIcon}
 							className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"

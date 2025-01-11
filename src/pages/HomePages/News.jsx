@@ -4,14 +4,14 @@ import Filter from '../../components/Filter';
 
 const News = () => {
 	return (
-		<div className="relative px-28 flex flex-col gap-12 mb-32">
+		<div className="relative xl:px-28 lg:px-20 gap-12 flex flex-col px-4 mb-32">
 			<img
 				src={triangle}
 				className="absolute -top-20 left-1/4 rotate-[70.18deg] blur-sm"
 				width={71}
 			/>
 
-			<div className="h-[148px] flex-col justify-start items-center gap-4 inline-flex">
+			<div className=" flex-col justify-start items-center gap-4 inline-flex w-full">
 				<div className="text-center">
 					<span className="text-[#1f212e] text-6xl font-extrabold font-sans capitalize leading-[90px]">
 						News

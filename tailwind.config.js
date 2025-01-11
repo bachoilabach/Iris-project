@@ -7,16 +7,15 @@ export default {
 				sans: ['"Plus Jakarta Sans"', 'sans-serif'],
 				mono: ['Azeret Mono', 'monospace'],
 			},
-			container: {
-				center: true,
-				screens: {
-					sm: '500px',
-					md: '768px',
-					lg: '1024px',
-					xl: '1280px',
-					'2xl': '1440px',
-				},
+
+			screens: {
+				sm: '501px',
+				md: '768px',
+				lg: '1024px',
+				xl: '1280px',
+				'2xl': '1440px',
 			},
+
 			grayscale: {
 				70: '70%',
 			},

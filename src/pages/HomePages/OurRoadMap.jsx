@@ -8,7 +8,7 @@ import leftArrow from '/public/icons/left-arrow.svg';
 export default function OurRoadMap() {
 	return (
 		<>
-			<div className="px-28 flex flex-col items-center ">
+			<div className="xl:px-28 sm:px-20 px-4 flex flex-col items-center sm:mt-0 mt-20">
 				<TitleAndDescription
 					title="Our"
 					titleGradient="Roadmaps"
@@ -17,9 +17,9 @@ export default function OurRoadMap() {
 			</div>
 
 			<div
-				className="w-full h-[900px] bg-cover grid grid-cols-2 place-content-center pl-28 mb-[100px]"
+				className="w-full h-[900px] bg-cover grid grid-cols-2 place-content-center xl:pl-28 mb-[100px] px-20"
 				style={{ backgroundImage: `url(${RoadMapImage})` }}>
-				<div className="flex-col justify-start items-center inline-flex ml-28 place-self-center">
+				<div className="flex-col justify-start items-center sm:inline-flex ml-28 place-self-center hidden">
 					<img src={QuantumWildlife} className="mb-[-28px]" loading='lazy'/>
 					<div className="px-4 py-3 bg-white rounded-full shadow-[0px_4px_16px_0px_rgba(0,0,0,0.25)] backdrop-blur-[10px] justify-center items-center inline-flex">
 						<div className="text-center bg-gradient-to-l from-[#FFA755] to-[#EB212D] text-transparent bg-clip-text text-xs font-extrabold font-sans leading-none">
@@ -27,7 +27,7 @@ export default function OurRoadMap() {
 						</div>
 					</div>
 				</div>
-				<div className='gap-4 flex flex-col items-center'>
+				<div className='gap-4 sm:flex flex-col items-center hidden'>
 					<QuanTumModal />
 					<div className='flex gap-2'>
 						<div className='p-[10px] rounded-full bg-white'>

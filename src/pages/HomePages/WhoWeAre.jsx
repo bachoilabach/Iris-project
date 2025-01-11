@@ -5,7 +5,7 @@ export default function WhoWeAre() {
 	return (
 		<>
 			{/* Who we are */}
-			<div className="px-[216px] py-24 bg-[#f2f4f6] flex flex-col items-center">
+			<div className="xl:px-[216px] lg:px-20 md:py-24 px-6 py-20 bg-[#f2f4f6] flex flex-col items-center">
 				<TitleAndDescription
 					title={'Who'}
 					titleGradient={'we are?'}
@@ -14,25 +14,30 @@ export default function WhoWeAre() {
 					distribution platform that supports integration of NFT games, xR
 					technology and related products.`}
 				/>
-				<div className="relative">
-					<img src={bgLogo} alt="Background" />
+				<div className="relative md:mt-0 my-16">
+					<img
+						src={bgLogo}
+						alt="Background"
+						width={1008}
+						className="scale-150 md:scale-100"
+					/>
 					<img
 						src={logo}
-						className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
 						alt="Logo"
+						className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-auto max-w-[300px] md:max-w-[400px] lg:max-w-[500px]"
 					/>
 				</div>
-				<div className="w-[1008px] text-center">
-					<span className="text-[#1f212e] text-[40px] font-extrabold font-['Plus Jakarta Sans'] leading-[60px]">
+				<div className="text-center xl:text-[40px] md:text-[36px] text-2xl md:w-full sm:w-[400px]">
+					<span className="text-[#1f212e]  font-extrabold font-sans md:leading-[60px] leading-[30px]">
 						We are inheriting{' '}
 					</span>
-					<span className="text-[#e04834] text-[40px] font-extrabold font-['Plus Jakarta Sans'] leading-[60px]">
+					<span className="text-[#e04834]  font-extrabold font-sans md:leading-[60px] leading-[30px]">
 						the values and influences{' '}
 					</span>
-					<span className="text-[#20212f] text-[40px] font-extrabold font-['Plus Jakarta Sans'] leading-[60px]">
+					<span className="text-[#20212f]  font-extrabold font-sans md:leading-[60px] leading-[30px]">
 						previously{' '}
 					</span>
-					<span className="text-[#1f212e] text-[40px] font-extrabold font-['Plus Jakarta Sans'] leading-[60px]">
+					<span className="text-[#1f212e]  font-extrabold font-sans md:leading-[60px] leading-[30px]">
 						built at FPT, and aim to develop and bring our products to the
 						world.
 					</span>

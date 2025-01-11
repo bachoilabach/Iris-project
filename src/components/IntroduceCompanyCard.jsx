@@ -5,14 +5,14 @@ import RightArrow from '/public/icons/right-arrow.svg';
 import { Link } from 'react-router-dom';
 const IntroduceCompanyCard = () => {
 	return (
-		<div className="inline-flex gap-8">
+		<div className="grid sm:grid-cols-2 grid-cols-1 gap-8 ">
 			{/* FPT */}
 			<Link
 				to={''}
-				className="w-[592px] h-[466px] px-[60px] py-10 bg-[#fdfdfd] rounded-3xl flex-col justify-start items-start relative overflow-hidden cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105">
+				className="xl:px-[60px] px-10 py-10 bg-[#fdfdfd] rounded-3xl flex-col justify-start items-start relative overflow-hidden cursor-pointer transition-transform duration-300 ease-in-out sm:hover:scale-105">
 				<img
 					src={ArtBoard}
-					className="left-[367px] top-[-28px] absolute opacity-20"
+					className="xl:left-[367px] left-[300px]  top-[-28px] absolute opacity-20 h-full"
 				/>
 				<img src={FPTLogo} className="mb-8" />
 				<div className="self-stretch gap-4">
@@ -50,12 +50,12 @@ const IntroduceCompanyCard = () => {
 			{/* Aka Verse */}
 			<Link
 				to={''}
-				className="w-[592px] h-[466px] px-[60px] py-10 bg-[#fdfdfd] rounded-3xl flex-col justify-start items-start relative overflow-hidden cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105">
+				className=" px-[60px] py-10 bg-[#fdfdfd] rounded-3xl flex-col justify-start items-start relative overflow-hidden cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105">
 				<img
 					src={ArtBoard}
-					className="left-[367px] top-[-28px] absolute opacity-20"
+					className="xl:left-[367px] left-[300px]  top-[-28px] absolute opacity-20 h-full"
 				/>
-				<img src={AkaVLogo} className="mb-8 w-52" />
+				<img src={AkaVLogo} className="mb-8 w-52 h-[80px]" />
 				<div className="self-stretch gap-4">
 					<div className="text-[#1f212e] text-base font-sans leading-relaxed">
 						Developed by experts from FPT Software –{' '}

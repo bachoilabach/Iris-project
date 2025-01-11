@@ -10,28 +10,28 @@ export const listCard = [
 		description:
 			'Players in ARCADE GAME HUB can try whatever gameplay fits their preferences to earn resources.',
 		image: arcadeImage,
-		size: 'w-[800px] ',
+		size: 'xl:w-[800px] md:w-[500px] md:min-h-full w-full ',
 	},
 	{
 		title: 'XR Event Hub',
 		description:
 			'A diversified game distribution hub with immersive experience.',
 		image: xrImage,
-		size: 'w-96',
+		size: 'xl:w-96 md:w-80 w-full max-h-1/2',
 	},
 	{
 		title: 'Virtual Community',
 		description:
 			'A series of Music and Esport Concerts supported by Virtual Reality experience.',
 		image: virtualImage,
-		size: 'w-[488px] min-h-[488px]',
+		size: 'xl:w-[488px] xl:min-h-[488px] w-[510px] ',
 	},
 	{
 		title: 'Avatar Character',
 		description:
 			'A place for concert, esport, music events, and especially for virtual interactive events.',
 		image: characterImage,
-		size: 'w-[696px] min-h-[488px]',
+		size: 'xl:w-[696px] xl:min-h-[488px]',
 	},
     {
 		title: 'Interact to earn ',

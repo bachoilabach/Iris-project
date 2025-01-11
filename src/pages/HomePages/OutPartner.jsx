@@ -4,7 +4,7 @@ import TitleAndDescription from '../../components/TitleAndDescription';
 export default function OutPartner() {
 	return (
 		<>
-			<div className="px-28 flex flex-col items-center ">
+			<div className="sm:px-28 px-4 flex flex-col items-center ">
 				<TitleAndDescription
 					title={'Our'}
 					titleGradient={'Partners'}
