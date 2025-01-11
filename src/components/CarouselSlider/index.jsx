@@ -13,10 +13,13 @@ const CarouselSlider = () => {
 	const slides = useSelector(slideSelector);
 	const slideIndex = useSelector(filterSliderIndexSelector);
 	const swiperRef = useRef(null);
+	const swiperRefMobile = useRef(null);
+
 
 	useEffect(() => {
 		if (swiperRef.current) {
 			swiperRef.current.slideTo(Number(slideIndex));
+			swiperRefMobile.current.slideTo(Number(slideIndex));
 		}
 	}, [slideIndex]);
 
@@ -81,7 +84,7 @@ const CarouselSlider = () => {
 					centeredSlides={true}
 					spaceBetween={30}
 					initialSlide={Number(slideIndex)}
-					onSwiper={(swiper) => (swiperRef.current = swiper)}
+					onSwiper={(swiper) => (swiperRefMobile.current = swiper)}
 					pagination={{
 						clickable: true,
 					}}
